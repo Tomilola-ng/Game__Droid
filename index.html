@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="full fixed flex col bgyellow">
+    <p class="logo--text h1 bold f-black-shadow fwhite whitestroke">
+      Game Drọid
+    </p>
+    <div class="load--bar bgwhite">
+      <div class="load--line bgyellow center"></div>
+    </div>
+  </main>
+
+  <div class="logo--holder fixed full flex center">
+    <img src="botface.png"  />
+  </div>
+
+  <div class="score--holder bgyellow fblack flex bold h3 pad10 boxshadow tac fixed">
+      <div> You : <span id="user--tag"> 001 </span> </div>
+      <div class="bgyellow pad5"> </div>
+      <div> Droid : <span id="bot--tag"> 001 </span> </div>
+  </div>
+    
+  <section id="home" class="full fixed bgwhite col">
+    <div class="game--link--container full center flex wrap">
+      <a href="#ttt--page" class="game--btn ttt--link bgyellow h2 bold flex tac"> Tic Tac Toe</a>
+      <a href="#math--page" class="game--btn bgyellow h2 bold flex tac"> Math Game </a>
+      <!--
+      <a href="" class="game--btn bgyellow h2 bold flex tac"> Jack Pot </a>
+      <a href="" class="game--btn bgyellow h2 bold flex tac"> History Geeks </a>
+      -->
+    </div>
+  </section>
+
+  <section id="ttt--page" class="full fixed bgwhite col">
+    <div class="container flex wrap bgyellow boxshadow center">
+      <div class="tile empty" id="box1"></div>
+      <div class="tile empty" id="box2"></div>
+      <div class="tile empty" id="box3"></div>
+      <div class="tile empty" id="box4"></div>
+      <div class="tile empty" id="box5"></div>
+      <div class="tile empty" id="box6"></div>
+      <div class="tile empty" id="box7"></div>
+      <div class="tile empty" id="box8"></div>
+      <div class="tile empty" id="box9"></div>
+    </div>
+  </section>
+  
+  <section id="math--page" class="full fixed bgwhite col">
+       <div class="math--cont container none flex wrap bgyellow boxshadow center col">
+         <div class="question--tab">
+           <p class="math--question h2 tac fwhite"></p>
+         </div>
+         <div class="answer--tab bgwhite flex wrap pad10 bd curve5 mt10">
+           <div class="math--btn bgyellow h2 bold fwhite flex bold curve bd" id="math--btn1"> 345 </div>
+           <div class="math--btn bgyellow h2 bold fwhite flex bold curve bd" id="math--btn2"> 345 </div>
+           <div class="math--btn bgyellow h2 bold fwhite flex bold curve bd" id="math--btn3"> 345 </div>
+           <div class="math--btn bgyellow h2 bold fwhite flex bold curve bd" id="math--btn4"> 345 </div>
+         </div>
+       </div>
+       <div class="math--play center pad10 curve3 bd h1 bold flex bgyellow fwhite f-black-shadow" id="play--math">
+         Play <span class="right pad10"> ∆ </span>
+       </div>
+  </section>
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>
